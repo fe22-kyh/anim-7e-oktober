@@ -1,0 +1,96 @@
+/* || General */
+html, body {
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  padding-bottom: 3em;
+}
+
+.container {
+  width: 90%;
+  margin: 1em auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-logo {
+  display: none;
+}
+
+/* || Navigation */
+
+.page-nav {
+  background-color: #fff;
+  /* border-bottom: 2px solid #969696; */
+  box-shadow: 0 0 2px #969696;
+}
+
+.nav-list {
+  display: flex;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.nav-item {
+  padding: .5em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .2em;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-size: .8rem;
+}
+
+.nav-personal {
+  position: fixed;
+  background-color: #fff;
+
+  bottom: 0;
+  width: 100%;
+}
+
+.nav-personal .nav-list {
+  /* Skrev över .nav-list justify-content */
+  justify-content: space-evenly; 
+}
+
+
+/* || Search field */
+.page-search {
+  display: flex;
+  background-color: #fff;
+  
+  margin: 1em;
+  padding: .5em;
+  border-radius: 999px;
+  box-shadow: 2px 2px 4px #969696;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.search-field {
+  width: 100%;
+  padding: .5em .3em;
+  border: none;
+  outline: none; /* tar bort blå fokus box */
+  font-size: 1.1rem;
+}
+
+.search-field:focus:placeholder-shown {
+  font-weight: 100;
+  color: #a6a6a6;
+}
+
+/* || Footer */
+.page-footer {
+  background-color: #d2d2d2;
+  padding: 1em 0;
+}

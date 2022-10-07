@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super awesome airbnb</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style/card.css" />
+
+    <!--Media queries är tänkt att skriva över allmän css, därav kommer dessa sist!-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/medium.css" />
+    <link rel="stylesheet" href="./style/large.css" />
+
+    <script src="./script/cards.js" defer></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-brand">
+        <img
+          class="page-logo"
+          src="./assets/icons/page-logo.svg"
+          alt="page logo"
+        />
+        <div class="page-search">
+          <label for="search-field" class="search-icon">&#x1F50E;</label>
+          <input
+            id="search-field"
+            class="search-field"
+            type="text"
+            placeholder="Vart ska du?"
+          />
+        </div>
+
+        <button>Login</button>
+      </div>
+
+      <!-- <input type="checkbox" class="toggle" /> -->
+
+      <nav class="page-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <!-- hexa texten: html entity -->
+            <span class="nav-icon">&#x2302;</span>
+            <a class="nav-link" href="">Vid sjön</a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-icon">&#x2636;</span>
+            <a class="nav-link" href="">Nationalparker</a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-icon">&#x169DD;</span>
+            <a class="nav-link" href="">Stugor</a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-icon">&#x2353;</span>
+            <a class="nav-link" href="">Wow!</a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-icon">&#x2302;</span>
+            <a class="nav-link" href="">Jordhus</a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-icon">&#x2302;</span>
+            <a class="nav-link" href="">Nära stranden</a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-icon">&#x2302;</span>
+            <a class="nav-link" href="">Minihus</a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-icon">&#x2302;</span>
+            <a class="nav-link" href="">Öar</a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-icon">&#x2302;</span>
+            <a class="nav-link" href="">Arktis</a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-icon">&#x2302;</span>
+            <a class="nav-link" href="">Fantastisk utsikt</a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-icon">&#x2302;</span>
+            <a class="nav-link" href="">Design</a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-icon">&#x2302;</span>
+            <a class="nav-link" href="">Husvagn</a>
+          </li>
+        </ul>
+
+        <div class="nav-personal mobile-view">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <span class="nav-icon">&#x2302;</span>
+              <a class="nav-link" href="">Explore</a>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">&#x2302;</span>
+              <a class="nav-link" href="">Wish list</a>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">&#x2302;</span>
+              <a class="nav-link" href="">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- Här laddas korten (cards)-->
+      <div class="store"></div>
+    </div>
+
+    <footer class="page-footer">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam laborum
+      tempore veniam et placeat libero illum assumenda commodi, fugiat
+      laudantium.
+    </footer>
+  </body>
+</html>

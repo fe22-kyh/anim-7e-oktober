@@ -1,0 +1,25 @@
+@media screen and (min-width: 976px) {
+  .store {
+    justify-content: space-evenly;
+  }
+
+  .card {
+    flex: 0 1 200px;
+  }
+
+  .page-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .page-logo {
+    display: block;
+    height: 3em;
+    margin-left: 1em;
+  }
+
+  .page-search {
+    margin-left: 4em;
+  }
+}
